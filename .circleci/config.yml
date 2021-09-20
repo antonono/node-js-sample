@@ -15,8 +15,8 @@ jobs:
       - run:
           name: Run tests
           command: |
-            docker run --name temp -d -p 8080:8080 node_app 
-            sleep 10
+            #docker run --name temp -d -p 8080:8080 node_app 
+            #sleep 10
             npm test
       - run:
           name: Push application Docker image
