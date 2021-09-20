@@ -1,7 +1,7 @@
 jobs:
   build:
     docker:
-      - image: antonono/porjetcicd:projetcicd
+      - image: antonono/projetcicd:projetcicd
         auth:
           username: $DOCKER_LOGIN  # can specify string literal values
           password: $DOCKER_MDP
