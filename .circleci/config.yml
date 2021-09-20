@@ -6,9 +6,6 @@ jobs:
           username: $DOCKER_LOGIN  # can specify string literal values
           password: $DOCKER_MDP
     steps:
-      docker:
-      - image: antonono/projetcicd:projetcicd
-        auth:
-          username: $DOCKER_LOGIN  # can specify string literal values
-          password: $DOCKER_MDP
-      - run: npm test
+      jobs:
+        - node/test:
+            version: 13.11.0
