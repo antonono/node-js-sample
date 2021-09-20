@@ -1,7 +1,7 @@
 jobs:
   build:
     docker:
-      - image: cimg/node:16.8.0
+      - image: antonono/porjetcicd:projetcicd
     steps:
       - checkout
       - run: node --version
