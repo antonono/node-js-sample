@@ -7,9 +7,6 @@ jobs:
           password: $DOCKER_MDP
     steps:
       - run:
-           name: Antoninbuild
-           command: npm install mocha
-      - run:
           name: test
-          command: mocha
+          command: npm test
 
