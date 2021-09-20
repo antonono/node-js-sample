@@ -9,8 +9,7 @@ jobs:
       - run:
            name: Antoninbuild
            command: npm install mocha
-    jobs:
-      - node/test:
+      - run:
           name: test
           command: mocha
 
