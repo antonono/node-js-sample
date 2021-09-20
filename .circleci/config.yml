@@ -7,9 +7,10 @@ jobs:
           password: $DOCKER_MDP
     steps:
       - run:
-        - name: Antonin
-        - command: docker run -p 8080:8080 -t antonono/projetcicd:projetcicd
+           name: Antonin
+           command: docker run -p 8080:8080 -t antonono/projetcicd:projetcicd
 
-      jobs:
-        - node/test:
-            version: 13.11.0
+    jobs:
+      - node/test:
+          version: 13.11.0
+
