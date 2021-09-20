@@ -7,4 +7,4 @@ jobs:
           password: $DOCKER_MDP
     steps:
       - checkout
-      - run: node --version
+      - run: npm test
