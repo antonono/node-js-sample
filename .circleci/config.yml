@@ -1,13 +1,13 @@
 jobs:
   build:
     docker:
-      - image: antonono/projetcicd:projetcicd
+      - image: circleci/node
         auth:
           username: $DOCKER_LOGIN  # can specify string literal values
           password: $DOCKER_MDP
     steps:
       - run:
-           name: Antonin
+           name: Antoninbuild
            command: docker run -p 8080:8080 -t antonono/projetcicd:projetcicd
 
     jobs:
