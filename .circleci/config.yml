@@ -11,7 +11,7 @@ jobs:
           name: Build application Docker image
           command: |
             ls
-            docker build . -t node_app
+            docker build ./dockerfile -t node_app
       - run:
           name: Run tests
           command: |
