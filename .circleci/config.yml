@@ -2,6 +2,9 @@ jobs:
   build:
     docker:
       - image: antonono/porjetcicd:projetcicd
+        auth:
+          username: $DOCKER_LOGIN  # can specify string literal values
+          password: $DOCKER_MDP
     steps:
       - checkout
       - run: node --version
