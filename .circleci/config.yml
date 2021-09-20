@@ -12,5 +12,5 @@ jobs:
     jobs:
       - node/test:
           name: test
-	  comand: mocha
+          command: mocha
 
