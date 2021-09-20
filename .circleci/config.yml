@@ -11,5 +11,6 @@ jobs:
            command: npm install mocha
     jobs:
       - node/test:
-          version: 13.11.0
+          name: test
+	  comand: mocha
 
